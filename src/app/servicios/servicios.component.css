@@ -1,0 +1,50 @@
+.casilla {
+    height: 5rem;
+    margin: 0.5rem;
+    font-size: 3rem;
+}
+
+.subtitulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    margin: 50px;
+    text-align: center;
+    color: darkgreen;
+}
+
+.footer{
+    color: darkgrey;
+    text-align: center;
+}
+
+.p1{
+    font-size: 1rem;
+    margin: 0 50px;
+    text-align: justify;
+
+
+}
+
+.p2{
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+    font-style: italic;
+    font-size: 1rem;
+    margin: 0 50px;
+    text-align: initial;  
+
+}
+
+.imagen2{
+    display: inline-block;
+    width: 40%;
+    vertical-align: middle;
+}
+
+.imagen2 img{
+    width: 100%;
+}
+
+
+

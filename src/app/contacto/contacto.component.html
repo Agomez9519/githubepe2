@@ -1,0 +1,78 @@
+<div class="imagen">
+    <img src="assets/football.jpg" alt="" height="400" width="100%">
+    </div>
+    
+
+<div>
+    <h2 class="subtitulo">Contacto</h2>
+
+    <p class="parrafo"><b>Si desea contactarse a nuestras oficinas centrales puede acceder a la siguiente direccion.</b></p>
+    <br>
+    <p class="direccion">Direccion: Vicuña Mackenna #3020, San Joaquin <br>
+                         Telfono: 22343242 <br>
+                         Correo:contacto@fhoy.cl <br>
+                         Instagram:Football-hoycl <br>
+                         Facebook:Football_Hoy <br>
+                         Twitter:footbalhoycl <br><br>
+    </p>
+
+    <div class="foto">
+        <img src="assets/contacto.jpg" alt="">
+    </div>
+
+    <p class="parrafo"><b><br>Para mas informacion sobre marketing, consultas, dudas, sugerencias y reclamos te adjuntamos el formulario de contacto.</b></p><br><br>
+
+</div>
+
+
+<div class="formulario">
+<form action="contact.php" method="post">
+    <fieldset>
+        <legend id="leyenda"><b>Formulario De contacto</b></legend>
+    <div class="elem-group">
+      <label for="name">Nombre Completo</label>
+      <input type="text" id="name" name="visitor_name" placeholder="Ingrese su nombre aca!" pattern=[A-Z\sa-z]{3,20} required>
+    </div>
+    <div class="elem-group">
+      <label for="email"> E-mail</label>
+      <input type="email" id="email" name="visitor_email" placeholder="suemail@email.com" required>
+    </div>
+    <div class="elem-group">
+      <label for="department-selection">Elija el departamento</label>
+      <select id="department-selection" name="concerned_department" required>
+          <option value="">Seleccione aca!</option>
+          <option value="billing">Redes Sociales</option>
+          <option value="marketing">Marketing</option>
+          <option value="technical support">Soporte Tecnico</option>
+      </select>
+    </div>
+    <div class="elem-group">
+      <label for="title">Razon de la consulta</label>
+      <input type="text" id="title" name="email_title" required placeholder="Ingrese su razon" pattern=[A-Za-z0-9\s]{8,60}>
+    </div>
+    <div class="elem-group">
+      <label for="message">Escriba su mensaje aca</label>
+      <textarea id="message" name="visitor_message" placeholder="Cuentenos, estamos para atenderte..." required></textarea>
+    </div>
+    <button type="submit">Enviar Mensaje</button>
+</fieldset>
+  </form>
+
+</div>
+
+
+
+<div style="text-align: center;">
+    <br><hr><br>
+    <a routerLink="/inicio">Home</a>&nbsp;
+    <a routerLink="/portafolio">Torneo Nacional 2020!</a>&nbsp;
+    <a routerLink="/servicios">Servicios</a>&nbsp;
+    <a routerLink="/partners">Partners</a>&nbsp;
+    <a routerLink="/contacto">Contacto</a>&nbsp;
+    <a routerLink="/gato">Mini Juego</a>&nbsp;
+
+    <br><br>
+    <p class="footer">@Copyright Andres Gomez</p>
+</div>
+
+<router-outlet></router-outlet>

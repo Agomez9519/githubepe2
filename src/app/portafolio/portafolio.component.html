@@ -1,0 +1,35 @@
+<div class="imagen">
+    <img src="assets/football.jpg" alt="" height="400" width="100%">
+    </div>
+
+    <h2 class="subtitulo">Torneo Nacional 2020!!!</h2>
+
+    <p class="parrafo"><b>Este es un breve resumen de todo lo que acontese en el campeonato nacional.</b></p>
+     
+    <div class="foto-campeonato">
+      <img src="assets/campeonato.png" alt="">
+    </div><br><br>
+
+    <div id="tabla">
+  <table border="0">
+      <tr *ngFor="let art of deportes">
+          <td>{{art.nombre}}&nbsp;</td>
+        <td>{{art.descripcion}}<br><br></td>
+      </tr>
+  </table>
+</div>
+
+<div style="text-align: center;">
+    <br><hr><br>
+    <a routerLink="/inicio">Home</a>&nbsp;
+    <a routerLink="/portafolio">Torneo Nacional 2020!</a>&nbsp;
+    <a routerLink="/servicios">Servicios</a>&nbsp;
+    <a routerLink="/partners">Partners</a>&nbsp;
+    <a routerLink="/contacto">Contacto</a>&nbsp;
+    <a routerLink="/gato">Mini Juego</a>&nbsp;
+
+    <br><br>
+    <p class="footer">@Copyright Andres Gomez</p>
+</div>
+
+<router-outlet></router-outlet>
